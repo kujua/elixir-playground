@@ -17,7 +17,6 @@ defmodule AuthenticationphoenixuberauthWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/logout", AuthController, :delete
   end
 
   scope "/login", AuthenticationphoenixuberauthWeb do
@@ -26,7 +25,7 @@ defmodule AuthenticationphoenixuberauthWeb.Router do
     get "/:provider", AuthController, :request
     get "/:provider/callback", AuthController, :callback
     post "/:provider/callback", AuthController, :callback
-
+    delete "/logout", AuthController, :delete
   end
 
   # Other scopes may use custom stacks.

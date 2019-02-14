@@ -14,8 +14,8 @@ defmodule AuthenticationphoenixuberauthWeb.AuthController do
 
   def delete(conn, _params) do
     conn
+    |> clear_session()
     |> put_flash(:info, "You have been logged out!")
-    |> configure_session(drop: true)
     |> redirect(to: "/")
   end
 

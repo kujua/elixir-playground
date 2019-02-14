@@ -1,8 +1,19 @@
+
 <section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed and maintainability.</p>
+  <h1>Simple Authentication</h1>
+  <%= if @current_user do %>
+      <h2>Welcome, <%= @current_user.id %>!</h2>
+      <%= button "Logout", to: Routes.auth_path(@conn, :delete), method: :delete, class: "btn btn-danger" %>
+      <br>
+    <% else %>
+      <a class="btn btn-primary btn-lg" href="/login/identity">
+        <i class="fa fa-user"></i>
+          Login
+      </a>
+    <% end %>
 </section>
 
+<!--
 <section class="row">
   <article class="column">
     <h2>Resources</h2>
@@ -33,3 +44,4 @@
     </ul>
   </article>
 </section>
+-->
