@@ -22,6 +22,15 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+config :ueberauth, Ueberauth,
+       providers: [
+         identity: { Ueberauth.Strategy.Identity, [
+           callback_methods: ["POST"],
+           request_path: "/login/identity",
+           callback_path: "/login/identity/callback"
+         ]}
+       ]
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
