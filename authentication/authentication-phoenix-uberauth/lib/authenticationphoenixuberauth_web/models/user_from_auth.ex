@@ -54,7 +54,8 @@ defmodule UserFromAuth do
     {:error, "Password required"}
   end
   defp validate_pass(%{other: %{password: pw, password_confirmation: pw}}) do
-    :ok
+    {:error, "User not found or password wrong"}
+#    :ok
   end
   defp validate_pass(%{other: %{password: _}}) do
     {:error, "Passwords do not match"}
