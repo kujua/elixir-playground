@@ -1,13 +1,6 @@
 defmodule POutput do
-  @moduledoc """
-  Documentation for POutput.
-  """
+  @moduledoc false
 
-  
-
-  @doc """
-  Hello world.
-  """
   def receive_message(msg) do
     IO.puts(msg)
   end

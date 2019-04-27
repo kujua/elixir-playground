@@ -10,6 +10,7 @@ defmodule POutput.Application do
     children = [
       # Starts a worker by calling: POutput.Worker.start_link(arg)
       # {POutput.Worker, arg}
+      POutputWorker
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
