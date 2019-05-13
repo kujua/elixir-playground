@@ -1,4 +1,4 @@
-defmodule BroadwayRabbitmqTest do
+defmodule BroadwayTestTest do
   use ExUnit.Case
 
   test "dummy" do

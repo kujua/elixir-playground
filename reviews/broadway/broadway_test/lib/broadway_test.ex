@@ -1,5 +1,4 @@
-defmodule BroadwayRabbitmq do
-  defmodule MyBroadway do
+defmodule BroadwayTest do
   use Broadway
 
   alias Broadway.Message
@@ -43,6 +42,5 @@ defmodule BroadwayRabbitmq do
     IO.inspect(list, label: "Got batch")
     messages
   end
-
-end
+  
 end

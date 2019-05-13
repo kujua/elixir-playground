@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :broadway_rabbitmq, key: :value
+#     config :broadway_test, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:broadway_rabbitmq, :key)
+#     Application.get_env(:broadway_test, :key)
 #
 # You can also configure a third-party app:
 #

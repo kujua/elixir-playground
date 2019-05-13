@@ -1,4 +1,4 @@
-defmodule BroadwayRabbitmq.Application do
+defmodule BroadwayTest.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -8,14 +8,14 @@ defmodule BroadwayRabbitmq.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: BroadwayRabbitmq.Worker.start_link(arg)
-      # {BroadwayRabbitmq.Worker, arg}
-      {MyBroadway, []}
+      # Starts a worker by calling: BroadwayTest.Worker.start_link(arg)
+      # {BroadwayTest.Worker, arg}
+      BroadwayTest
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: BroadwayRabbitmq.Supervisor]
+    opts = [strategy: :one_for_one, name: BroadwayTest.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end
