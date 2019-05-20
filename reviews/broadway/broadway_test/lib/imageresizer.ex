@@ -19,16 +19,19 @@ defmodule Imageresizer do
   def handle_call({:process, event}, _from, state) do
     IO.inspect(event.id, label: "Imageresizer - call - id")
     IO.inspect(event.name, label: "Imageresizer - call - name")
-    str_resize = ["convert", event.name, "-resize 50%", "assets/" <> event.name <> ".jpg"]
-    task = Task.async(fn -> System.cmd("./assets/resize.sh", []) end)
-    ret = Task.await(task)
-
+    resizename = String.replace_trailing(event.name, ".jpg", "") <> "-resized.jpg"
+    task = Task.async(fn -> runmagick(event.name, resizename)  end)
+    {_,ret} = Task.await(task)
     IO.inspect(ret, label: "Imageresizer - returned from task")
-    {:reply, :ok, [event], state} # Dispatch immediately
+    # error handling
+    {:reply, :ok, [event], state}
   end
 
   def handle_demand(_demand, state) do
     {:noreply, [], state}
   end
 
+  defp runmagick(from, to) do
+     System.cmd("./assets/resize.sh", ["assets/" <> from, "assets/" <> to])
+  end
 end
