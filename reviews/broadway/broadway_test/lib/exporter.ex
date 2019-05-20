@@ -4,11 +4,12 @@ defmodule Exporter do
   use GenStage
 
   def init(:ok) do
-    {:consumer, %{}}
+    {:consumer, 0}
   end
 
   def handle_events(events, _from, state) do
     # process
-    {:noreply, %{}, state}
+    IO.inspect(events, label: "Exporter: event")
+    {:noreply, [], state}
   end
 end

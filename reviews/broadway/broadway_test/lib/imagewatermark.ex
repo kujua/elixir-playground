@@ -3,12 +3,13 @@ defmodule Imagewatermark do
 
   use GenStage
 
-  def init(_opts) do
-    {:producer_consuner, %{}}
+  def init(state) do
+    {:producer_consumer, state}
   end
 
   def handle_events(events, _from, state) do
-    # save file
+    # process
+    IO.inspect(events, label: "Imagewatermark: event")
     {:noreply, events, state}
   end
 end

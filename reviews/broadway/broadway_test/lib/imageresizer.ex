@@ -3,13 +3,16 @@ defmodule Imageresizer do
 
   use GenStage
 
-  def init(_demand) do
-    {:producer, %{}}
+  def init(state) do
+    {:producer, state}
   end
 
-  def handle_demand(_demand, state) do
+  def handle_demand(demand, state) do
     # create events
-    {:noreply, %{}, state}
+    events = state
+#    {to_dispatch, remaining} = Enum.split(events, demand)
+    IO.inspect(events, label: "Imageresizer: demand")
+    {:noreply, [events], state}
   end
 
 end

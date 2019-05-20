@@ -1,0 +1,38 @@
+2019-05-20 07:31:41.102 [error] <0.234.0> gen_server 'Elixir.RabbitBroadway.Producer_default_2' terminated with reason: {{shutdown,{server_initiated_close,404,<<"NOT_FOUND - no queue 'my_queue' in vhost '/'">>}},{gen_server,call,[<0.342.0>,{subscribe,{'basic.consume',0,<<"my_queue">>,<<>>,false,false,false,false,[]},<0.347.0>},60000]}} in gen_server:call/3 line 223
+2019-05-20 08:54:13.419 [error] <0.265.0> gen_server <0.265.0> terminated with reason: bad return value: {noreply,#{},#{}}
+2019-05-20 09:03:49.873 [error] <0.265.0> gen_server <0.265.0> terminated with reason: bad return value: {noreply,#{},#{}}
+2019-05-20 09:18:59.594 [error] <0.256.0> gen_server <0.256.0> terminated with reason: bad return value: {noreply,#{},#{}}
+2019-05-20 09:18:59.615 [error] <0.256.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.256.0> with 3 neighbours exited with reason: bad return value: {noreply,#{},#{}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:27:07.376 [error] <0.255.0> gen_server <0.255.0> terminated with reason: bad return value: {noreply,#{},#{}}
+2019-05-20 09:27:07.386 [error] <0.255.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.255.0> with 3 neighbours exited with reason: bad return value: {noreply,#{},#{}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:28:51.154 [error] <0.264.0> gen_server <0.264.0> terminated with reason: bad return value: {noreply,1000,#{}}
+2019-05-20 09:28:51.163 [error] <0.264.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.264.0> with 3 neighbours exited with reason: bad return value: {noreply,1000,#{}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:30:16.941 [error] <0.256.0> gen_server <0.256.0> terminated with reason: bad return value: {noreply,1000,#{}}
+2019-05-20 09:30:16.950 [error] <0.256.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.256.0> with 3 neighbours exited with reason: bad return value: {noreply,1000,#{}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:31:48.244 [error] <0.264.0> gen_server <0.264.0> terminated with reason: {badkey,events,#{}} in 'Elixir.Imageresizer':handle_demand/2 line 25
+2019-05-20 09:31:48.265 [error] <0.264.0> CRASH REPORT Process <0.264.0> with 3 neighbours crashed with reason: {badkey,events,#{}} in 'Elixir.Imageresizer':handle_demand/2 line 25
+2019-05-20 09:36:53.617 [error] <0.266.0> gen_server <0.266.0> terminated with reason: bad return value: {noreply,#{},dummy}
+2019-05-20 09:36:53.626 [error] <0.266.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.266.0> with 3 neighbours exited with reason: bad return value: {noreply,#{},dummy} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:37:46.535 [error] <0.267.0> GenStage consumer <0.267.0> cannot dispatch events (an empty list must be returned): [1,2,3]
+2019-05-20 09:39:03.982 [error] <0.258.0> gen_server <0.258.0> terminated with reason: bad return value: {noreply,ok}
+2019-05-20 09:39:03.991 [error] <0.258.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.258.0> with 3 neighbours exited with reason: bad return value: {noreply,ok} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:40:05.774 [error] <0.267.0> gen_server <0.267.0> terminated with reason: bad return value: {noreply,ok,dummy}
+2019-05-20 09:40:05.782 [error] <0.267.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.267.0> with 3 neighbours exited with reason: bad return value: {noreply,ok,dummy} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:40:37.044 [error] <0.267.0> gen_server <0.267.0> terminated with reason: bad return value: {noreply,0,dummy}
+2019-05-20 09:40:37.053 [error] <0.267.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.267.0> with 3 neighbours exited with reason: bad return value: {noreply,0,dummy} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:40:55.079 [error] <0.266.0> gen_server <0.266.0> terminated with reason: bad return value: {noreply,0,0}
+2019-05-20 09:40:55.089 [error] <0.266.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.266.0> with 3 neighbours exited with reason: bad return value: {noreply,0,0} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:46:54.940 [error] <0.265.0> gen_server <0.265.0> terminated with reason: bad return value: {noreply,#{},#{}}
+2019-05-20 09:46:54.950 [error] <0.265.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.265.0> with 3 neighbours exited with reason: bad return value: {noreply,#{},#{}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:47:20.350 [error] <0.255.0> gen_server <0.255.0> terminated with reason: bad return value: {noreply,#{},3}
+2019-05-20 09:47:20.363 [error] <0.255.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.255.0> with 3 neighbours exited with reason: bad return value: {noreply,#{},3} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:48:14.039 [error] <0.264.0> gen_server <0.264.0> terminated with reason: bad return value: {noreply,#{name => <<"filename">>},#{name => <<"filename">>}}
+2019-05-20 09:48:14.050 [error] <0.264.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.264.0> with 3 neighbours exited with reason: bad return value: {noreply,#{name => <<"filename">>},#{name => <<"filename">>}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:49:41.578 [error] <0.264.0> gen_server <0.264.0> terminated with reason: bad return value: {noreply,#{name => <<"filename">>}}
+2019-05-20 09:49:41.587 [error] <0.264.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.264.0> with 3 neighbours exited with reason: bad return value: {noreply,#{name => <<"filename">>}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 09:57:42.078 [error] <0.266.0>@Elixir.GenStage:noreply_callback:2053 gen_server <0.266.0> terminated with reason: call to undefined function 'Elixir.Imagewatermark':handle_cast/2 from 'Elixir.GenStage':noreply_callback/3 line 2053
+2019-05-20 09:57:42.092 [error] <0.266.0>@Elixir.Imagewatermark:handle_cast CRASH REPORT Process <0.266.0> with 3 neighbours crashed with reason: call to undefined function 'Elixir.Imagewatermark':handle_cast({processimage,#{}}, #{})
+2019-05-20 09:58:34.889 [error] <0.265.0> gen_server <0.265.0> terminated with reason: bad return value: {noreply,#{},#{}}
+2019-05-20 09:58:34.898 [error] <0.265.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.265.0> with 3 neighbours exited with reason: bad return value: {noreply,#{},#{}} in gen_server:handle_common_reply/8 line 751
+2019-05-20 10:00:13.878 [error] <0.256.0> gen_server <0.256.0> terminated with reason: bad return value: {noreply,#{from => <<"direct">>,name => <<"filename">>},#{}}
+2019-05-20 10:00:13.886 [error] <0.256.0>@gen_server:handle_common_reply:751 CRASH REPORT Process <0.256.0> with 3 neighbours exited with reason: bad return value: {noreply,#{from => <<"direct">>,name => <<"filename">>},#{}} in gen_server:handle_common_reply/8 line 751

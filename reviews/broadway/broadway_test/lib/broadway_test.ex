@@ -9,7 +9,7 @@ defmodule BroadwayTest do
       producers: [
         default: [
           module: {BroadwayRabbitMQ.Producer,
-            queue: "my_queue",
+            queue: "images",
             qos: [
               prefetch_count: 50,
             ]
