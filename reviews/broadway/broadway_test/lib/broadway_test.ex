@@ -37,23 +37,19 @@ defmodule BroadwayTest do
   end
 
   def handle_message(_, %Message{data: data} = message, _) do
-    IO.inspect(data, label: "Broadway: handle_message")
+    IO.inspect(data, label: "Broadway - handle_message")
     message
     |> Message.update_data(&process_data/1)
   end
 
-  def handle_batch(_, messages, _, _) do
-    list = messages |> Enum.map(fn e -> e.data end)
-    IO.inspect(list, label: "Got batch")
-    messages
-  end
+#  def handle_batch(_, messages, _, _) do
+#    list = messages |> Enum.map(fn e -> e.data end)
+#    IO.inspect(list, label: "Got batch")
+#    messages
+#  end
 
   defp process_data(data) do
-    {:ok, a} = GenStage.start_link(Imageresizer, %{name: data})   # starting from zero
-    {:ok, b} = GenStage.start_link(Imagewatermark, %{})   # expand by 2
-    {:ok, c} = GenStage.start_link(Exporter, :ok) # state does not matter
-
-    {:ok, _} = GenStage.sync_subscribe(b, to: a)
-    {:ok, _} = GenStage.sync_subscribe(c, to: b)
+    IO.inspect(data, label: "Broadway - process data")
+    Imageresizer.process(data)
   end
 end

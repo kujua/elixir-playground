@@ -562,3 +562,187 @@ GenStage consumer <0.267.0> cannot dispatch events (an empty list must be return
     reductions: 201
   neighbours:
     neighbour: [{pid,<0.353.0>},{registered_name,[]},{initial_call,{erlang,apply,2}},{current_function,{code_server,call,1}},{ancestors,[]},{message_queue_len,0},{links,[<0.354.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,22},{reductions,162},{current_stacktrace,[{code_server,call,1,[{file,"code_server.erl"},{line,140}]},{error_handler,undefined_function,3,[{file,"error_handler.erl"},{line,41}]},{'Elixir.ExUnit.Runner',failed,3,[{file,"lib/ex_unit/runner.ex"},{line,435}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,359}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test_monitor/4-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,306}]}]}]
+2019-05-20 11:20:18 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.267.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Imagewatermark',{bad_opts,<<"expected :subscribe_to to be a list, got: Imageresizer">>}}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.266.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.268.0>,normal}]
+    links: [<0.266.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 214
+  neighbours:
+2019-05-20 11:28:01 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.354.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,358}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.352.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.352.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 306
+  neighbours:
+    neighbour: [{pid,<0.353.0>},{registered_name,[]},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.352.0>]},{message_queue_len,0},{links,[<0.352.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,10},{reductions,85},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.352.0>},{registered_name,[]},{initial_call,{erlang,apply,2}},{current_function,{code_server,call,1}},{ancestors,[]},{message_queue_len,0},{links,[<0.353.0>,<0.354.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,22},{reductions,202},{current_stacktrace,[{code_server,call,1,[{file,"code_server.erl"},{line,140}]},{error_handler,undefined_function,3,[{file,"error_handler.erl"},{line,41}]},{'Elixir.ExUnit.Runner',failed,3,[{file,"lib/ex_unit/runner.ex"},{line,435}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,359}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test_monitor/4-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,306}]}]}]
+2019-05-20 11:28:42 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.354.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,358}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.352.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.352.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 306
+  neighbours:
+    neighbour: [{pid,<0.353.0>},{registered_name,[]},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.352.0>]},{message_queue_len,0},{links,[<0.352.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,10},{reductions,85},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.352.0>},{registered_name,[]},{initial_call,{erlang,apply,2}},{current_function,{code_server,call,1}},{ancestors,[]},{message_queue_len,0},{links,[<0.353.0>,<0.354.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,22},{reductions,208},{current_stacktrace,[{code_server,call,1,[{file,"code_server.erl"},{line,140}]},{error_handler,undefined_function,3,[{file,"error_handler.erl"},{line,41}]},{'Elixir.ExUnit.Runner',failed,3,[{file,"lib/ex_unit/runner.ex"},{line,435}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,359}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test_monitor/4-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,306}]}]}]
+2019-05-20 11:31:05 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.238.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Imagewatermark',noproc}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.237.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.239.0>,normal}]
+    links: [<0.237.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 208
+  neighbours:
+2019-05-20 11:41:38 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.236.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Imageresizer',{'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.Imageresizer',#{},'Elixir.Imageresizer'],[{file,"lib/gen_server.ex"},{line,881}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.235.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.237.0>,normal}]
+    links: [<0.235.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 256
+  neighbours:
+2019-05-20 11:46:44 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.356.0>
+    registered_name: []
+    exception exit: {noproc,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,358}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.354.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.354.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 290
+  neighbours:
+    neighbour: [{pid,<0.355.0>},{registered_name,[]},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.354.0>]},{message_queue_len,0},{links,[<0.354.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,10},{reductions,101},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+    neighbour: [{pid,<0.354.0>},{registered_name,[]},{initial_call,{erlang,apply,2}},{current_function,{code_server,call,1}},{ancestors,[]},{message_queue_len,0},{links,[<0.355.0>,<0.356.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,22},{reductions,203},{current_stacktrace,[{code_server,call,1,[{file,"code_server.erl"},{line,140}]},{error_handler,undefined_function,3,[{file,"error_handler.erl"},{line,41}]},{'Elixir.ExUnit.Runner',failed,3,[{file,"lib/ex_unit/runner.ex"},{line,435}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,359}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test_monitor/4-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,306}]}]}]
+2019-05-20 14:34:54 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.238.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.BroadwayTest.Application',start,[normal,[]]},{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"supervisors expect each child to be one of the following:\n\n  * a module\n  * a {module, arg} tuple\n  * a child specification as a map with at least the :id and :start fields\n  * or a tuple with 6 elements generated by Supervisor.Spec (deprecated)\n\nGot: {Imageresizer, %{}, [name: Imageresizer]}\n">>},[{'Elixir.Supervisor',init_child,1,[{file,"lib/supervisor.ex"},{line,646}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1327}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1327}]},{'Elixir.Supervisor',init,2,[{file,"lib/supervisor.ex"},{line,615}]},{'Elixir.Supervisor',start_link,2,[{file,"lib/supervisor.ex"},{line,564}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,277}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.237.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.239.0>,normal}]
+    links: [<0.237.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 243
+  neighbours:
+2019-05-20 14:53:20 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Supervisor.Default/1
+    pid: <0.240.0>
+    registered_name: []
+    exception exit: {{start_spec,{duplicate_child_name,'Elixir.Imagewatermark'}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,358}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.239.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.239.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 333
+  neighbours:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          2019-05-20 14:58:34 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.247.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,w_id_2,{already_started,<0.319.0>}}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.246.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.248.0>,normal}]
+    links: [<0.246.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 227
+  neighbours:
+2019-05-20 14:59:28 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.238.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,w_id_2,{already_started,<0.309.0>}}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.237.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.239.0>,normal}]
+    links: [<0.237.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 233
+    stack_size: 27
+    reductions: 225
+  neighbours:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    2019-05-20 15:29:36 =ERROR REPORT====
+** Task <0.370.0> terminating
+** Started from 'Elixir.Imagewatermark'
+** When function  == #Fun<Elixir.Imagewatermark.0.81025478>
+**      arguments == []
+** Reason for termination == 
+** {'function not exported',[{'Elixir.System',cmd,[<<"ls">>],[]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

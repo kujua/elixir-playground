@@ -4,17 +4,17 @@ defmodule BroadwayTest.Application do
   @moduledoc false
 
   use Application
-
+  use Supervisor
+  
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: BroadwayTest.Worker.start_link(arg)
-      # {BroadwayTest.Worker, arg}
-      BroadwayTest
+      BroadwayTest,
+      Imageresizer,
+      Imagewatermark,
+      Exporter
     ]
 
-    # See https://hexdocs.pm/elixir/Supervisor.html
-    # for other strategies and supported options
     opts = [strategy: :one_for_one, name: BroadwayTest.Supervisor]
     Supervisor.start_link(children, opts)
   end

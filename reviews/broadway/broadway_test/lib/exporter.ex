@@ -3,13 +3,17 @@ defmodule Exporter do
 
   use GenStage
 
-  def init(:ok) do
-    {:consumer, 0}
+  def start_link(state) do
+    GenStage.start_link(__MODULE__, state, name: __MODULE__)
+  end
+
+  def init(_state) do
+    {:consumer, 0, subscribe_to: [Imagewatermark]}
   end
 
   def handle_events(events, _from, state) do
     # process
-    IO.inspect(events, label: "Exporter: event")
+    IO.inspect(events, label: "Exporter - event")
     {:noreply, [], state}
   end
 end
