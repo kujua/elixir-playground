@@ -613,3 +613,56 @@
 2019-05-20 10:05:13.225 [info] <0.43.0> Application amqp started on node nonode@nohost
 2019-05-20 10:05:13.225 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
 2019-05-20 10:05:14.000 [warning] <0.204.0> lager_error_logger_h dropped 62 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-20 10:17:09.309 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-20 10:17:09.313 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-20 10:17:09.315 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-20 10:17:09.320 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-20 10:17:09.322 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-20 10:17:09.326 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-20 10:17:09.327 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-20 10:17:09.328 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-20 10:17:09.328 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-20 10:17:09.334 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-20 10:17:09.334 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-20 10:17:09.334 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-20 10:17:10.000 [warning] <0.204.0> lager_error_logger_h dropped 62 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-20 10:23:31.866 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-20 10:23:31.869 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-20 10:23:31.871 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-20 10:23:31.876 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-20 10:23:31.878 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-20 10:23:31.882 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-20 10:23:31.884 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-20 10:23:31.885 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-20 10:23:31.885 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-20 10:23:31.891 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-20 10:23:31.891 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-20 10:23:31.891 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-20 10:23:31.999 [warning] <0.204.0> lager_error_logger_h dropped 52 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-20 10:23:32.019 [error] <0.354.0>@gen_server:init_it:366 CRASH REPORT Process <0.354.0> with 1 neighbours exited with reason: bad return value: nil in gen_server:init_it/6 line 366
+2019-05-20 10:35:33.611 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-20 10:35:33.615 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-20 10:35:33.620 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-20 10:35:33.625 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-20 10:35:33.627 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-20 10:35:33.633 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-20 10:35:33.634 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-20 10:35:33.635 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-20 10:35:33.635 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-20 10:35:33.642 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-20 10:35:33.642 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-20 10:35:33.642 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-20 10:35:34.000 [warning] <0.235.0> lager_error_logger_h dropped 58 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-20 10:39:39.842 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-20 10:39:39.846 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-20 10:39:39.848 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-20 10:39:39.852 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-20 10:39:39.855 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-20 10:39:39.859 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-20 10:39:39.860 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-20 10:39:39.861 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-20 10:39:39.861 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-20 10:39:39.867 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-20 10:39:39.867 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-20 10:39:39.867 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-20 10:39:40.000 [warning] <0.195.0> lager_error_logger_h dropped 62 messages in the last second that exceeded the limit of 50 messages/sec

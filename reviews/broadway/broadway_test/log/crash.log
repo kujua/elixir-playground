@@ -544,3 +544,21 @@ GenStage consumer <0.267.0> cannot dispatch events (an empty list must be return
     neighbour: [{pid,<0.255.0>},{registered_name,[]},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.254.0>]},{message_queue_len,0},{links,[<0.254.0>]},{trap_exit,false},{status,waiting},{heap_size,376},{stack_size,10},{reductions,663},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
     neighbour: [{pid,<0.257.0>},{registered_name,[]},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.254.0>]},{message_queue_len,0},{links,[<0.254.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,10},{reductions,676},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,403}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
     neighbour: [{pid,<0.254.0>},{registered_name,[]},{initial_call,{erlang,apply,2}},{current_function,{'Elixir.Process',sleep,1}},{ancestors,[]},{message_queue_len,0},{links,[<0.256.0>,<0.257.0>,<0.255.0>]},{trap_exit,false},{status,waiting},{heap_size,376},{stack_size,15},{reductions,876},{current_stacktrace,[{'Elixir.Process',sleep,1,[{file,"lib/process.ex"},{line,253}]},{'Elixir.Imageprocessor','test gen_stage pipeline',1,[{file,"test/imageprocessor_test.exs"},{line,18}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,355}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test_monitor/4-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,306}]}]}]
+2019-05-20 10:23:32 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.BroadwayTest:init/1
+    pid: <0.354.0>
+    registered_name: []
+    exception exit: {{bad_return_value,nil},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,366}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.353.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.353.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 201
+  neighbours:
+    neighbour: [{pid,<0.353.0>},{registered_name,[]},{initial_call,{erlang,apply,2}},{current_function,{code_server,call,1}},{ancestors,[]},{message_queue_len,0},{links,[<0.354.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,22},{reductions,162},{current_stacktrace,[{code_server,call,1,[{file,"code_server.erl"},{line,140}]},{error_handler,undefined_function,3,[{file,"error_handler.erl"},{line,41}]},{'Elixir.ExUnit.Runner',failed,3,[{file,"lib/ex_unit/runner.ex"},{line,435}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,359}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test_monitor/4-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,306}]}]}]

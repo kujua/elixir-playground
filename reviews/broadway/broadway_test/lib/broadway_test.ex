@@ -3,6 +3,10 @@ defmodule BroadwayTest do
 
   alias Broadway.Message
 
+#  def init(state) do
+#    {:ok, %{}}
+#  end
+
   def start_link(_opts) do
     Broadway.start_link(__MODULE__,
       name: RabbitBroadway,
@@ -32,9 +36,10 @@ defmodule BroadwayTest do
     )
   end
 
-  def handle_message(_, message, _) do
+  def handle_message(_, %Message{data: data} = message, _) do
+    IO.inspect(data, label: "Broadway: handle_message")
     message
-    |> Message.update_data(fn data -> {data, String.to_integer(data) * 2} end)
+    |> Message.update_data(&process_data/1)
   end
 
   def handle_batch(_, messages, _, _) do
@@ -42,5 +47,13 @@ defmodule BroadwayTest do
     IO.inspect(list, label: "Got batch")
     messages
   end
-  
+
+  defp process_data(data) do
+    {:ok, a} = GenStage.start_link(Imageresizer, %{name: data})   # starting from zero
+    {:ok, b} = GenStage.start_link(Imagewatermark, %{})   # expand by 2
+    {:ok, c} = GenStage.start_link(Exporter, :ok) # state does not matter
+
+    {:ok, _} = GenStage.sync_subscribe(b, to: a)
+    {:ok, _} = GenStage.sync_subscribe(c, to: b)
+  end
 end
