@@ -745,4 +745,167 @@ GenStage consumer <0.267.0> cannot dispatch events (an empty list must be return
 **      arguments == []
 ** Reason for termination == 
 ** {'function not exported',[{'Elixir.System',cmd,[<<"ls">>],[]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          2019-05-21 08:36:29 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"invalid configuration given to Broadway.start_link/2, expected :transformer to be a tuple {Mod, Fun, Args}, got: {Transformer, :tranform_queue_message, %{}}">>},[{'Elixir.Broadway',start_link,2,[{file,"lib/broadway.ex"},{line,492}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.BroadwayTest'},{mfargs,{'Elixir.BroadwayTest',start_link,[[]]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  2019-05-21 08:37:14 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"invalid configuration given to Broadway.start_link/2, expected :transformer to be a tuple {Mod, Fun, Args}, got: {Transformer, :tranform_queue_message, nil}">>},[{'Elixir.Broadway',start_link,2,[{file,"lib/broadway.ex"},{line,492}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.BroadwayTest'},{mfargs,{'Elixir.BroadwayTest',start_link,[[]]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2019-05-21 08:37:14 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.236.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.BroadwayTest',{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"invalid configuration given to Broadway.start_link/2, expected :transformer to be a tuple {Mod, Fun, Args}, got: {Transformer, :tranform_queue_message, nil}">>},[{'Elixir.Broadway',start_link,2,[{file,"lib/broadway.ex"},{line,492}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.235.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.237.0>,normal}]
+    links: [<0.235.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 256
+  neighbours:
+2019-05-21 08:38:08 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"invalid configuration given to Broadway.start_link/2, expected :transformer to be a tuple {Mod, Fun, Args}, got: {Transformer, :tranform_queue_message, %{}}">>},[{'Elixir.Broadway',start_link,2,[{file,"lib/broadway.ex"},{line,492}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.BroadwayTest'},{mfargs,{'Elixir.BroadwayTest',start_link,[[]]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2019-05-21 08:38:08 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.242.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.BroadwayTest',{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"invalid configuration given to Broadway.start_link/2, expected :transformer to be a tuple {Mod, Fun, Args}, got: {Transformer, :tranform_queue_message, %{}}">>},[{'Elixir.Broadway',start_link,2,[{file,"lib/broadway.ex"},{line,492}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.241.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.243.0>,normal}]
+    links: [<0.241.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 256
+  neighbours:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 2019-05-21 08:48:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"invalid configuration given to Broadway.start_link/2, expected :transformer to be a tuple {Mod, Fun, Args}, got: {BroadwayTest, :transform, %{}}">>},[{'Elixir.Broadway',start_link,2,[{file,"lib/broadway.ex"},{line,492}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.BroadwayTest'},{mfargs,{'Elixir.BroadwayTest',start_link,[[]]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2019-05-21 08:48:51 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.236.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.BroadwayTest',{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"invalid configuration given to Broadway.start_link/2, expected :transformer to be a tuple {Mod, Fun, Args}, got: {BroadwayTest, :transform, %{}}">>},[{'Elixir.Broadway',start_link,2,[{file,"lib/broadway.ex"},{line,492}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]}]}}}},{'Elixir.BroadwayTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.235.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.237.0>,normal}]
+    links: [<0.235.0>,<0.43.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 256
+  neighbours:
+2019-05-21 10:30:31 =ERROR REPORT====
+** Generic server 'Elixir.Imageresizer' terminating 
+** Last message in was {process,<<"warthog.jpg, S3R556, jpg">>}
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+** Client 'Elixir.RabbitBroadway.Processor_default_1' stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,986}]},{'Elixir.Broadway.Message',update_data,2,[{file,"lib/broadway/message.ex"},{line,40}]},{'Elixir.Broadway.Processor',handle_messages,4,[{file,"lib/broadway/processor.ex"},{line,65}]},{'Elixir.Broadway.Processor',handle_events,3,[{file,"lib/broadway/processor.ex"},{line,35}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2019-05-21 10:30:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.306.0>
+    registered_name: 'Elixir.Imageresizer'
+    exception error: bad argument: [{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 8631
+  neighbours:
+2019-05-21 10:30:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.306.0>},{id,'Elixir.Imageresizer'},{mfargs,{'Elixir.Imageresizer',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 10:30:31 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'DOWN',#Ref<0.683119262.2653945859.95979>,process,<0.306.0>,{badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-21 10:30:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.307.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 19882
+  neighbours:
+2019-05-21 10:30:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.307.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 10:30:31 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.683119262.2653945859.95983>,process,<0.307.0>,{badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+** When Server state == 0
+** Reason for termination == 
+** {badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-21 10:30:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 19623
+  neighbours:
+2019-05-21 10:30:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
