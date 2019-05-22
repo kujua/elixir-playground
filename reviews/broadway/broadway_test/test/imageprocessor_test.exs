@@ -9,13 +9,16 @@ defmodule ImageprocessorTest do
 
   @tag :gen_stage
   test "gen_stage pipeline integration test" do
-    Imageresizer.process(%{file_name: "warthog.jpg", customer_id: "FE51EF", image_type: "jpg"})
+    Imageresizer.process(%{file_name: "warthog.jpg",
+                            customer_id: "FE51EF",
+                            image_type: "jpg",
+                            status: :ok})
     Process.sleep(500)
   end
 
   @tag :broadway
   test "broadway pipeline integration test" do
-    ref = Broadway.test_messages(RabbitBroadway, ["warthog.jpg, S3R556, jpg"])
+    ref = Broadway.test_messages(RabbitBroadway, ["S3R556,warthog.jpg,jpg"])
     Process.sleep(500)
 #    assert_receive {:ack, ^ref, [_, _, _] = _successful, failed}
 #    assert_receive {:ack, ^ref, [%{status: :ok}, %{status: :ok}], []}

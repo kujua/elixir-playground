@@ -1316,3 +1316,318 @@
 2019-05-21 10:41:02.535 [info] <0.43.0> Application amqp started on node nonode@nohost
 2019-05-21 10:41:02.536 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
 2019-05-21 10:41:03.000 [warning] <0.195.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-21 16:37:50.752 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-21 16:37:50.756 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-21 16:37:50.758 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-21 16:37:50.762 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-21 16:37:50.764 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-21 16:37:50.768 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-21 16:37:50.769 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-21 16:37:50.770 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-21 16:37:50.770 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-21 16:37:50.776 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-21 16:37:50.776 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-21 16:37:50.776 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-21 16:37:51.001 [warning] <0.209.0> lager_error_logger_h dropped 66 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-21 16:37:51.002 [error] <0.312.0> CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours crashed with reason: {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24
+2019-05-21 16:37:51.002 [error] <0.243.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.312.0> exit with reason {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24 in context child_terminated
+2019-05-21 16:37:51.002 [info] <0.313.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.312.0> with reason: {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-21 16:37:51.003 [error] <0.313.0> gen_server 'Elixir.Exporter' terminated with reason: {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24
+2019-05-21 16:37:51.004 [error] <0.313.0> CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24 in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:37:51.004 [error] <0.243.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.313.0> exit with reason {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24 in context child_terminated
+2019-05-21 16:41:40.908 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-21 16:41:40.912 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-21 16:41:40.914 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-21 16:41:40.918 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-21 16:41:40.921 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-21 16:41:40.925 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-21 16:41:40.926 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-21 16:41:40.927 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-21 16:41:40.927 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-21 16:41:40.933 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-21 16:41:40.933 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-21 16:41:40.933 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-21 16:41:41.000 [warning] <0.204.0> lager_error_logger_h dropped 47 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-21 16:41:41.138 [error] <0.307.0> gen_server 'Elixir.Imagewatermark' terminated with reason: {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24
+2019-05-21 16:41:41.145 [error] <0.307.0> CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours crashed with reason: {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24
+2019-05-21 16:41:41.145 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.307.0> exit with reason {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24 in context child_terminated
+2019-05-21 16:41:41.146 [info] <0.308.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.307.0> with reason: {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-21 16:41:41.146 [error] <0.308.0> gen_server 'Elixir.Exporter' terminated with reason: {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24
+2019-05-21 16:41:41.146 [error] <0.308.0> CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24 in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:41:41.147 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason {badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]} in 'Elixir.Imagewatermark':handle_events/3 line 24 in context child_terminated
+2019-05-21 16:42:33.785 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-21 16:42:33.789 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-21 16:42:33.790 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-21 16:42:33.795 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-21 16:42:33.797 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-21 16:42:33.801 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-21 16:42:33.803 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-21 16:42:33.804 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-21 16:42:33.804 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-21 16:42:33.810 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-21 16:42:33.810 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-21 16:42:33.810 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-21 16:42:33.999 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-21 16:42:34.012 [error] <0.307.0> gen_server 'Elixir.Imagewatermark' terminated with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}
+2019-05-21 16:42:34.016 [error] <0.307.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours exited with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:42:34.016 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.307.0> exit with reason bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in context child_terminated
+2019-05-21 16:42:34.016 [info] <0.308.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.307.0> with reason: {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+2019-05-21 16:42:34.017 [error] <0.308.0> gen_server 'Elixir.Exporter' terminated with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}
+2019-05-21 16:42:34.017 [error] <0.308.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:42:34.017 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in context child_terminated
+2019-05-21 16:44:14.783 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-21 16:44:14.787 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-21 16:44:14.789 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-21 16:44:14.793 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-21 16:44:14.795 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-21 16:44:14.801 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-21 16:44:14.802 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-21 16:44:14.803 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-21 16:44:14.803 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-21 16:44:14.809 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-21 16:44:14.810 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-21 16:44:14.810 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-21 16:44:15.000 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-21 16:44:15.027 [error] <0.307.0> gen_server 'Elixir.Imagewatermark' terminated with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}
+2019-05-21 16:44:15.030 [error] <0.307.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours exited with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:44:15.031 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.307.0> exit with reason bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in context child_terminated
+2019-05-21 16:44:15.031 [info] <0.308.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.307.0> with reason: {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+2019-05-21 16:44:15.031 [error] <0.308.0> gen_server 'Elixir.Exporter' terminated with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}
+2019-05-21 16:44:15.031 [error] <0.308.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:44:15.031 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]} in context child_terminated
+2019-05-21 16:45:21.793 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-21 16:45:21.797 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-21 16:45:21.799 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-21 16:45:21.803 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-21 16:45:21.806 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-21 16:45:21.811 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-21 16:45:21.812 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-21 16:45:21.813 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-21 16:45:21.813 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-21 16:45:21.818 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-21 16:45:21.818 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-21 16:45:21.819 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-21 16:45:22.000 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-21 16:45:22.024 [error] <0.307.0> gen_server 'Elixir.Imagewatermark' terminated with reason: bad return value: {noreply,error,[],[]}
+2019-05-21 16:45:22.028 [error] <0.307.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours exited with reason: bad return value: {noreply,error,[],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:45:22.028 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.307.0> exit with reason bad return value: {noreply,error,[],[]} in context child_terminated
+2019-05-21 16:45:22.028 [info] <0.308.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.307.0> with reason: {bad_return_value,{noreply,error,[],[]}}
+2019-05-21 16:45:22.028 [error] <0.308.0> gen_server 'Elixir.Exporter' terminated with reason: bad return value: {noreply,error,[],[]}
+2019-05-21 16:45:22.028 [error] <0.308.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: bad return value: {noreply,error,[],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:45:22.028 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason bad return value: {noreply,error,[],[]} in context child_terminated
+2019-05-21 16:45:55.801 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-21 16:45:55.805 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-21 16:45:55.806 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-21 16:45:55.811 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-21 16:45:55.813 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-21 16:45:55.817 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-21 16:45:55.818 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-21 16:45:55.819 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-21 16:45:55.819 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-21 16:45:55.826 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-21 16:45:55.826 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-21 16:45:55.826 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-21 16:45:56.000 [warning] <0.195.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-21 16:45:56.036 [error] <0.298.0> gen_server 'Elixir.Imagewatermark' terminated with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}
+2019-05-21 16:45:56.040 [error] <0.298.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours exited with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:45:56.040 [error] <0.229.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.298.0> exit with reason bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]} in context child_terminated
+2019-05-21 16:45:56.040 [info] <0.299.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.298.0> with reason: {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}}
+2019-05-21 16:45:56.040 [error] <0.299.0> gen_server 'Elixir.Exporter' terminated with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}
+2019-05-21 16:45:56.041 [error] <0.299.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-21 16:45:56.041 [error] <0.229.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.299.0> exit with reason bad return value: {noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]} in context child_terminated
+2019-05-22 07:48:53.185 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 07:48:53.189 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 07:48:53.191 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 07:48:53.195 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 07:48:53.197 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 07:48:53.201 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 07:48:53.202 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 07:48:53.203 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 07:48:53.203 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 07:48:53.210 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 07:48:53.210 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 07:48:53.210 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 07:48:53.999 [warning] <0.195.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 07:50:04.249 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 07:50:04.253 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 07:50:04.255 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 07:50:04.260 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 07:50:04.262 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 07:50:04.266 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 07:50:04.267 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 07:50:04.268 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 07:50:04.269 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 07:50:04.274 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 07:50:04.274 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 07:50:04.274 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 07:50:05.001 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 07:51:43.122 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 07:51:43.126 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 07:51:43.128 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 07:51:43.133 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 07:51:43.135 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 07:51:43.140 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 07:51:43.141 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 07:51:43.142 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 07:51:43.142 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 07:51:43.147 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 07:51:43.147 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 07:51:43.147 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 07:51:44.000 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 07:57:05.189 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 07:57:05.194 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 07:57:05.196 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 07:57:05.200 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 07:57:05.202 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 07:57:05.206 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 07:57:05.207 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 07:57:05.209 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 07:57:05.209 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 07:57:05.215 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 07:57:05.215 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 07:57:05.215 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 07:57:06.000 [warning] <0.209.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 07:58:58.697 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 07:58:58.701 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 07:58:58.702 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 07:58:58.707 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 07:58:58.709 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 07:58:58.715 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 07:58:58.716 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 07:58:58.718 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 07:58:58.718 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 07:58:58.724 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 07:58:58.724 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 07:58:58.724 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 07:58:59.000 [warning] <0.209.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:19:55.636 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:19:55.640 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:19:55.642 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:19:55.646 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:19:55.648 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:19:55.653 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:19:55.654 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:19:55.655 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:19:55.655 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:19:55.661 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:19:55.661 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:19:55.662 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:19:55.999 [warning] <0.195.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:19:56.311 [error] <0.298.0>@Elixir.Imageresizer:handle_call:29 gen_server 'Elixir.Imageresizer' terminated with reason: bad argument in call to erlang:apply([<<"FE51F,warthog.jpg,jpg">>], customer_id, []) in 'Elixir.Imageresizer':handle_call/3 line 29
+2019-05-22 08:19:56.319 [error] <0.298.0>@Elixir.Imageresizer:handle_call:29 CRASH REPORT Process 'Elixir.Imageresizer' with 0 neighbours crashed with reason: bad argument in call to erlang:apply([<<"FE51F,warthog.jpg,jpg">>], customer_id, []) in 'Elixir.Imageresizer':handle_call/3 line 29
+2019-05-22 08:20:40.870 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:20:40.875 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:20:40.876 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:20:40.881 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:20:40.883 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:20:40.887 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:20:40.888 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:20:40.889 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:20:40.889 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:20:40.896 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:20:40.896 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:20:40.896 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:20:41.000 [warning] <0.195.0> lager_error_logger_h dropped 51 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:20:41.086 [error] <0.299.0> gen_server 'Elixir.Imagewatermark' terminated with reason: {badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}} in 'Elixir.Imagewatermark':handle_events/3 line 17
+2019-05-22 08:20:41.099 [error] <0.299.0> CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours crashed with reason: {badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}} in 'Elixir.Imagewatermark':handle_events/3 line 17
+2019-05-22 08:20:41.099 [error] <0.229.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.299.0> exit with reason {badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}} in 'Elixir.Imagewatermark':handle_events/3 line 17 in context child_terminated
+2019-05-22 08:20:41.099 [info] <0.300.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.299.0> with reason: {{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 08:20:41.100 [error] <0.300.0> gen_server 'Elixir.Exporter' terminated with reason: {badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}} in 'Elixir.Imagewatermark':handle_events/3 line 17
+2019-05-22 08:20:41.100 [error] <0.300.0> CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: {badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}} in 'Elixir.Imagewatermark':handle_events/3 line 17 in gen_server:handle_common_reply/8 line 751
+2019-05-22 08:20:41.101 [error] <0.229.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.300.0> exit with reason {badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}} in 'Elixir.Imagewatermark':handle_events/3 line 17 in context child_terminated
+2019-05-22 08:21:33.576 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:21:33.580 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:21:33.582 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:21:33.587 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:21:33.589 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:21:33.593 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:21:33.594 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:21:33.595 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:21:33.596 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:21:33.602 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:21:33.602 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:21:33.602 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:21:33.999 [warning] <0.214.0> lager_error_logger_h dropped 69 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:24:12.798 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:24:12.802 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:24:12.804 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:24:12.808 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:24:12.810 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:24:12.814 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:24:12.816 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:24:12.817 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:24:12.817 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:24:12.824 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:24:12.824 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:24:12.825 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:24:13.001 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:24:13.034 [error] <0.308.0> gen_server 'Elixir.Imagewatermark' terminated with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}
+2019-05-22 08:24:13.038 [error] <0.308.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours exited with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-22 08:24:13.038 [info] <0.309.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.308.0> with reason: {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+2019-05-22 08:24:13.038 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.308.0> exit with reason bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in context child_terminated
+2019-05-22 08:24:13.038 [error] <0.309.0> gen_server 'Elixir.Exporter' terminated with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}
+2019-05-22 08:24:13.039 [error] <0.309.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-22 08:24:13.039 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.309.0> exit with reason bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in context child_terminated
+2019-05-22 08:25:47.781 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:25:47.785 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:25:47.787 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:25:47.792 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:25:47.795 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:25:47.799 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:25:47.800 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:25:47.802 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:25:47.802 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:25:47.808 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:25:47.808 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:25:47.808 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:25:48.000 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:25:48.013 [error] <0.307.0> gen_server 'Elixir.Imagewatermark' terminated with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}
+2019-05-22 08:25:48.017 [error] <0.307.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Imagewatermark' with 0 neighbours exited with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-22 08:25:48.017 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Imagewatermark' started with 'Elixir.Imagewatermark':start_link([]) at <0.307.0> exit with reason bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in context child_terminated
+2019-05-22 08:25:48.017 [info] <0.308.0> GenStage consumer 'Elixir.Exporter' is stopping after receiving cancel from producer <0.307.0> with reason: {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+2019-05-22 08:25:48.017 [error] <0.308.0> gen_server 'Elixir.Exporter' terminated with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}
+2019-05-22 08:25:48.018 [error] <0.308.0>@gen_server:handle_common_reply:751 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours exited with reason: bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in gen_server:handle_common_reply/8 line 751
+2019-05-22 08:25:48.018 [error] <0.238.0> Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason bad return value: {reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]} in context child_terminated
+2019-05-22 08:26:30.937 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:26:30.942 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:26:30.943 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:26:30.948 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:26:30.950 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:26:30.954 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:26:30.955 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:26:30.956 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:26:30.956 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:26:30.963 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:26:30.963 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:26:30.963 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:26:30.999 [warning] <0.195.0> lager_error_logger_h dropped 38 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:26:31.013 [info] <0.43.0> Application ex_unit started on node nonode@nohost
+2019-05-22 08:26:31.179 [error] <0.300.0>@Elixir.Exporter:handle_events:14 gen_server 'Elixir.Exporter' terminated with reason: no function clause matching 'Elixir.Exporter':handle_events([#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}], {<0.299.0>,#Ref<0.813555365.2857893894.152012>}, 0) line 14
+2019-05-22 08:26:31.186 [error] <0.300.0>@Elixir.Exporter:handle_events:14 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours crashed with reason: no function clause matching 'Elixir.Exporter':handle_events([#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}], {<0.299.0>,#Ref<0.813555365.2857893894.152012>}, 0) line 14
+2019-05-22 08:26:31.186 [error] <0.229.0>@Elixir.Exporter:handle_events:14 Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.300.0> exit with reason no function clause matching 'Elixir.Exporter':handle_events([#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}], {<0.299.0>,#Ref<0.813555365.2857893894.152012>}, 0) line 14 in context child_terminated
+2019-05-22 08:28:13.714 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:28:13.718 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:28:13.719 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:28:13.724 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:28:13.726 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:28:13.730 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:28:13.731 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:28:13.732 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:28:13.732 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:28:13.738 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:28:13.738 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:28:13.739 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:28:14.000 [warning] <0.195.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec
+2019-05-22 08:29:10.797 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-05-22 08:29:10.801 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-05-22 08:29:10.803 [info] <0.43.0> Application broadway started on node nonode@nohost
+2019-05-22 08:29:10.808 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-05-22 08:29:10.809 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-05-22 08:29:10.813 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-05-22 08:29:10.815 [info] <0.43.0> Application ranch_proxy_protocol started on node nonode@nohost
+2019-05-22 08:29:10.816 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-05-22 08:29:10.816 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-05-22 08:29:10.823 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-05-22 08:29:10.823 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-05-22 08:29:10.823 [info] <0.43.0> Application broadway_rabbitmq started on node nonode@nohost
+2019-05-22 08:29:10.999 [warning] <0.204.0> lager_error_logger_h dropped 65 messages in the last second that exceeded the limit of 50 messages/sec

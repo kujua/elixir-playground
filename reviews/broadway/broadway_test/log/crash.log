@@ -909,3 +909,608 @@ GenStage consumer <0.267.0> cannot dispatch events (an empty list must be return
      Reason:     {badarg,[{erlang,apply,[<<"warthog.jpg, S3R556, jpg">>,id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,20}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
      Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
 
+2019-05-21 16:37:51 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.312.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception error: {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.242.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.243.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8158
+  neighbours:
+2019-05-21 16:37:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.312.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:37:51 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.2074433857.563085317.213865>,process,<0.312.0>,{{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+** When Server state == 0
+** Reason for termination == 
+** {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-21 16:37:51 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.313.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.242.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.243.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 24780
+  neighbours:
+2019-05-21 16:37:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.313.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:41:41 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.306.0>,#Ref<0.1958442145.2174484484.185669>},[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]}
+** When Server state == []
+** Reason for termination == 
+** {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-21 16:41:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.307.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception error: {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8158
+  neighbours:
+2019-05-21 16:41:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.307.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:41:41 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.1958442145.2174484484.185673>,process,<0.307.0>,{{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+** When Server state == 0
+** Reason for termination == 
+** {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-21 16:41:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 24780
+  neighbours:
+2019-05-21 16:41:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badmap,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,24}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:42:34 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.306.0>,#Ref<0.2193169218.3516661765.204499>},[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]}
+** When Server state == []
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+2019-05-21 16:42:34 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.307.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 5661
+  neighbours:
+2019-05-21 16:42:34 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+     Offender:   [{pid,<0.307.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:42:34 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.2193169218.3516661765.204502>,process,<0.307.0>,{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}}
+** When Server state == 0
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+2019-05-21 16:42:34 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 9683
+  neighbours:
+2019-05-21 16:42:34 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:44:15 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.306.0>,#Ref<0.2428462208.564133892.189592>},[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]}
+** When Server state == []
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+2019-05-21 16:44:15 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.307.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 5661
+  neighbours:
+2019-05-21 16:44:15 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+     Offender:   [{pid,<0.307.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:44:15 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.2428462208.564133892.189595>,process,<0.307.0>,{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}}
+** When Server state == 0
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+2019-05-21 16:44:15 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 9683
+  neighbours:
+2019-05-21 16:44:15 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => error}],[]}}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:45:22 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.306.0>,#Ref<0.1916920198.1369702405.110925>},[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]}
+** When Server state == []
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[],[]}}
+2019-05-21 16:45:22 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.307.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{bad_return_value,{noreply,error,[],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 4523
+  neighbours:
+2019-05-21 16:45:22 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[],[]}}
+     Offender:   [{pid,<0.307.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:45:22 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.1916920198.1369702401.113066>,process,<0.307.0>,{bad_return_value,{noreply,error,[],[]}}}
+** When Server state == 0
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[],[]}}
+2019-05-21 16:45:22 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{bad_return_value,{noreply,error,[],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 4762
+  neighbours:
+2019-05-21 16:45:22 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[],[]}}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:45:56 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.297.0>,#Ref<0.456643230.1906573317.256227>},[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}]}
+** When Server state == []
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}}
+2019-05-21 16:45:56 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.298.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.228.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.229.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 5736
+  neighbours:
+2019-05-21 16:45:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}}
+     Offender:   [{pid,<0.298.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-21 16:45:56 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.456643230.1906573317.256230>,process,<0.298.0>,{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}}}
+** When Server state == 0
+** Reason for termination == 
+** {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}}
+2019-05-21 16:45:56 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.299.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.228.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.229.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 9661
+  neighbours:
+2019-05-21 16:45:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{noreply,error,[#{'__struct__' => 'Elixir.ImageProcessingModel',customer_id => <<"S3R556">>,destination_type => nil,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,path_from => nil,path_to => nil,status => ok}],[]}}
+     Offender:   [{pid,<0.299.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:19:56 =ERROR REPORT====
+** Generic server 'Elixir.Imageresizer' terminating 
+** Last message in was {process,[<<"FE51F,warthog.jpg,jpg">>]}
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,apply,[[<<"FE51F,warthog.jpg,jpg">>],customer_id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,29}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+** Client <0.356.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,986}]},{'Elixir.Imageresizer',process,1,[{file,"lib/imageresizer.ex"},{line,9}]},{'Elixir.ImageprocessorTest','test gen_stage pipeline integration test',1,[{file,"test/imageprocessor_test.exs"},{line,12}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,355}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test_monitor/4-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,306}]}]
+2019-05-22 08:19:56 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.298.0>
+    registered_name: 'Elixir.Imageresizer'
+    exception error: bad argument: [{erlang,apply,[[<<"FE51F,warthog.jpg,jpg">>],customer_id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,29}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.228.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.229.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 9850
+  neighbours:
+2019-05-22 08:19:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,apply,[[<<"FE51F,warthog.jpg,jpg">>],customer_id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,29}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.298.0>},{id,'Elixir.Imageresizer'},{mfargs,{'Elixir.Imageresizer',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:19:56 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'DOWN',#Ref<0.2974901241.4198760453.135964>,process,<0.298.0>,{badarg,[{erlang,apply,[[<<"FE51F,warthog.jpg,jpg">>],customer_id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,29}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,apply,[[<<"FE51F,warthog.jpg,jpg">>],customer_id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,29}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 08:19:56 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.299.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{badarg,[{erlang,apply,[[<<"FE51F,warthog.jpg,jpg">>],customer_id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,29}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.228.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.229.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 21957
+  neighbours:
+2019-05-22 08:19:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,apply,[[<<"FE51F,warthog.jpg,jpg">>],customer_id,[]],[]},{'Elixir.Imageresizer',handle_call,3,[{file,"lib/imageresizer.ex"},{line,29}]},{'Elixir.GenStage',handle_call,3,[{file,"lib/gen_stage.ex"},{line,1776}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.299.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         2019-05-22 08:20:41 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.298.0>,#Ref<0.372159624.3393716227.229504>},[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}]}
+** When Server state == []
+** Reason for termination == 
+** {{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 08:20:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.299.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception error: {{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.228.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.229.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 6459
+  neighbours:
+2019-05-22 08:20:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.299.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:20:41 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.372159624.3393716227.229507>,process,<0.299.0>,{{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+** When Server state == 0
+** Reason for termination == 
+** {{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 08:20:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.300.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.228.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.229.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 22214
+  neighbours:
+2019-05-22 08:20:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {{badkey,status,#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>}},[{'Elixir.Imagewatermark',handle_events,3,[{file,"lib/imagewatermark.ex"},{line,17}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{'Elixir.GenStage',take_pc_events,3,[{file,"lib/gen_stage.ex"},{line,2502}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.300.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:24:13 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.307.0>,#Ref<0.1373021881.173015047.120693>},[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}]}
+** When Server state == []
+** Reason for termination == 
+** {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+2019-05-22 08:24:13 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 4616
+  neighbours:
+2019-05-22 08:24:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:24:13 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.1373021881.173015046.121301>,process,<0.308.0>,{bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}}
+** When Server state == 0
+** Reason for termination == 
+** {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+2019-05-22 08:24:13 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.309.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 7919
+  neighbours:
+2019-05-22 08:24:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+     Offender:   [{pid,<0.309.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:25:48 =ERROR REPORT====
+** Generic server 'Elixir.Imagewatermark' terminating 
+** Last message in was {'$gen_consumer',{<0.306.0>,#Ref<0.242237090.4199809029.81747>},[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}]}
+** When Server state == []
+** Reason for termination == 
+** {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+2019-05-22 08:25:48 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.307.0>
+    registered_name: 'Elixir.Imagewatermark'
+    exception exit: {{bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 4650
+  neighbours:
+2019-05-22 08:25:48 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+     Offender:   [{pid,<0.307.0>},{id,'Elixir.Imagewatermark'},{mfargs,{'Elixir.Imagewatermark',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:25:48 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'DOWN',#Ref<0.242237090.4199809029.81750>,process,<0.307.0>,{bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}}
+** When Server state == 0
+** Reason for termination == 
+** {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+2019-05-22 08:25:48 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.308.0>
+    registered_name: 'Elixir.Exporter'
+    exception exit: {{bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.238.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 7919
+  neighbours:
+2019-05-22 08:25:48 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,ok,[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],[]}}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 08:26:31 =ERROR REPORT====
+** Generic server 'Elixir.Exporter' terminating 
+** Last message in was {'$gen_consumer',{<0.299.0>,#Ref<0.813555365.2857893894.152012>},[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}]}
+** When Server state == 0
+** Reason for termination == 
+** {function_clause,[{'Elixir.Exporter',handle_events,[[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],{<0.299.0>,#Ref<0.813555365.2857893894.152012>},0],[{file,"lib/exporter.ex"},{line,14}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 08:26:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.GenStage:init/1
+    pid: <0.300.0>
+    registered_name: 'Elixir.Exporter'
+    exception error: {function_clause,[{'Elixir.Exporter',handle_events,[[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],{<0.299.0>,#Ref<0.813555365.2857893894.152012>},0],[{file,"lib/exporter.ex"},{line,14}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.BroadwayTest.Supervisor',<0.228.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.229.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 5587
+  neighbours:
+2019-05-22 08:26:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.Exporter',handle_events,[[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],{<0.299.0>,#Ref<0.813555365.2857893894.152012>},0],[{file,"lib/exporter.ex"},{line,14}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.300.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+

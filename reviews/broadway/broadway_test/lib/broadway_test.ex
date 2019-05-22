@@ -16,7 +16,6 @@ defmodule BroadwayTest do
             ]
           },
           stages: 2
-#          transformer: {__MODULE__, :transform_queue_message, []}
         ]
       ],
       processors: [
@@ -34,12 +33,20 @@ defmodule BroadwayTest do
     )
   end
 
-  def handle_message(processor, %Message{data: data} = message, context) do
+  def handle_message(processor, message, context) do
     IO.inspect(processor, label: "Broadway - handle_message - processor")
-    IO.inspect(data, label: "Broadway - handle_message - data")
+    IO.inspect(message.data, label: "Broadway - handle_message - data")
     IO.inspect(context, label: "Broadway - handle_message - context")
-    Transformer.transform_queue_message_to_model(data, [])
+
+    updatedmessage = Transformer.transform_queue_message_to_model(message.data, [])
     |> Message.update_data(&process_data/1)
+
+    IO.inspect(updatedmessage.data.status, label: "Broadway - handle_message - status")
+
+    case updatedmessage.data.status do
+      :ok -> updatedmessage
+      _ -> Message.failed(updatedmessage, "image processing failed")
+    end
   end
 
 #  def handle_batch(_, messages, _, _) do
@@ -52,7 +59,7 @@ defmodule BroadwayTest do
     IO.inspect(data, label: "Broadway - process data")
     Imageresizer.process(data)
   end
-
+  
 #  def transform_queue_message_to_model(message, _opts) do
 #    IO.inspect(message, label: "transform_queue_message")
 #    %Message{
