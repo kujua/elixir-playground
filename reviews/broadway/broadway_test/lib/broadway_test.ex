@@ -60,11 +60,4 @@ defmodule BroadwayTest do
     Imageresizer.process(data)
   end
   
-#  def transform_queue_message_to_model(message, _opts) do
-#    IO.inspect(message, label: "transform_queue_message")
-#    %Message{
-#      data: message,
-#      acknowledger: {__MODULE__, :ack_id, :ack_data}
-#    }
-#  end
 end
