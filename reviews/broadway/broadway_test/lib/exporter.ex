@@ -13,9 +13,10 @@ defmodule Exporter do
 
   def handle_events(events, _from, state) do
     # process
-    IO.inspect(events, label: "Exporter - event all the rest")
+    IO.inspect(events, label: "Exporter - event handler")
     case hd(events).status do
       :ok -> export_processed_file(events, state)
+      :special -> export_processed_file(events, state)
       _ -> {:noreply, [], state}
     end
   end

@@ -16,6 +16,7 @@ defmodule Imagewatermark do
 
     case hd(events).status do
        :ok -> create_watermark(events, state)
+       :special -> create_watermark(events, state)
        _ -> {:noreply, set_status(events, :error), state}
     end
   end

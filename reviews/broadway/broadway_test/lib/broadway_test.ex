@@ -12,7 +12,7 @@ defmodule BroadwayTest do
           module: {BroadwayRabbitMQ.Producer,
             queue: "images",
             qos: [
-              prefetch_count: 50,
+              prefetch_count: 10,
             ]
           },
           stages: 2
@@ -28,6 +28,11 @@ defmodule BroadwayTest do
           batch_size: 10,
           batch_timeout: 1500,
           stages: 5
+        ],
+        special: [
+          stages: 1,
+          batch_size: 5,
+          batch_timeout: 1500,
         ]
       ]
     )
@@ -45,19 +50,25 @@ defmodule BroadwayTest do
 
     case updatedmessage.data.status do
       :ok -> updatedmessage
+      :special -> Message.put_batcher(updatedmessage, :special)
       _ -> Message.failed(updatedmessage, "image processing failed")
     end
   end
-
-#  def handle_batch(_, messages, _, _) do
-#    list = messages |> Enum.map(fn e -> e.data end)
-#    IO.inspect(list, label: "Got batch")
-#    messages
-#  end
+                                                                     
+  def handle_batch(_, messages, _, _) do
+    IO.inspect(messages, label: "Got batch")
+    messages
+  end
 
   defp process_data(data) do
     IO.inspect(data, label: "Broadway - process data")
     Imageresizer.process(data)
   end
-  
+
+  def ack(ack_ref, successful, failed) do
+    IO.inspect(ack_ref, label: "ack - ack_ref")
+    IO.inspect(successful, label: "ack - successful")
+    IO.inspect(failed, label: "ack - failed")
+  end
+
 end

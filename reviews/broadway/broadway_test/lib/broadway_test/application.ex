@@ -12,6 +12,11 @@ defmodule BroadwayTest.Application do
       Exporter
     ]
 
+    :logger.add_primary_filter(
+      :ignore_rabbitmq_progress_reports,
+      {&:logger_filters.domain/2, {:stop, :equal, [:progress]}}
+    )
+
     opts = [strategy: :one_for_one, name: BroadwayTest.Supervisor]
     Supervisor.start_link(children, opts)
   end
