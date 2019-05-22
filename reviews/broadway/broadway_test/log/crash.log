@@ -1514,3 +1514,96 @@ GenStage consumer <0.267.0> cannot dispatch events (an empty list must be return
      Reason:     {function_clause,[{'Elixir.Exporter',handle_events,[[#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}],{<0.299.0>,#Ref<0.813555365.2857893894.152012>},0],[{file,"lib/exporter.ex"},{line,14}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
      Offender:   [{pid,<0.300.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
 
+2019-05-22 11:24:31 =ERROR REPORT====
+** Task <0.370.0> terminating
+** Started from 'Elixir.Exporter'
+** When function  == #Fun<Elixir.Exporter.0.88056288>
+**      arguments == []
+** Reason for termination == 
+** {function_clause,[{'Elixir.System',cmd,[<<"mv">>,<<"-f assets/FE51EF_warthog-watermark.jpg assets/FE51EF_processed-01.png">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 11:24:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Exporter:-export_processed_file/1-fun-0-/0
+    pid: <0.370.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.System',cmd,[<<"mv">>,<<"-f assets/FE51EF_warthog-watermark.jpg assets/FE51EF_processed-01.png">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.Exporter','Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.308.0>]
+    dictionary: [{'$callers',[<0.308.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 3839
+  neighbours:
+    neighbour: [{pid,<0.308.0>},{registered_name,'Elixir.Exporter'},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{'Elixir.Task',await,2}},{ancestors,['Elixir.BroadwayTest.Supervisor',<0.237.0>]},{message_queue_len,0},{links,[<0.238.0>,<0.370.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,29},{reductions,2029},{current_stacktrace,[{'Elixir.Task',await,2,[{file,"lib/task.ex"},{line,567}]},{'Elixir.Exporter',export_processed_file,1,[{file,"lib/exporter.ex"},{line,40}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+2019-05-22 11:24:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.System',cmd,[<<"mv">>,<<"-f assets/FE51EF_warthog-watermark.jpg assets/FE51EF_processed-01.png">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 11:43:23 =ERROR REPORT====
+** Task <0.370.0> terminating
+** Started from 'Elixir.Exporter'
+** When function  == #Fun<Elixir.Exporter.0.44551237>
+**      arguments == []
+** Reason for termination == 
+** {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 11:43:23 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Exporter:-export_processed_file/2-fun-0-/0
+    pid: <0.370.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.Exporter','Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.308.0>]
+    dictionary: [{'$callers',[<0.308.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 3219
+  neighbours:
+    neighbour: [{pid,<0.308.0>},{registered_name,'Elixir.Exporter'},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{'Elixir.Task',await,2}},{ancestors,['Elixir.BroadwayTest.Supervisor',<0.237.0>]},{message_queue_len,0},{links,[<0.238.0>,<0.370.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,32},{reductions,2016},{current_stacktrace,[{'Elixir.Task',await,2,[{file,"lib/task.ex"},{line,567}]},{'Elixir.Exporter',export_processed_file,2,[{file,"lib/exporter.ex"},{line,37}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+2019-05-22 11:43:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2019-05-22 11:45:02 =ERROR REPORT====
+** Task <0.370.0> terminating
+** Started from 'Elixir.Exporter'
+** When function  == #Fun<Elixir.Exporter.0.111092095>
+**      arguments == []
+** Reason for termination == 
+** {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 11:45:02 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Exporter:-export_processed_file/2-fun-0-/0
+    pid: <0.370.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.Exporter','Elixir.BroadwayTest.Supervisor',<0.237.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.308.0>]
+    dictionary: [{'$callers',[<0.308.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 3232
+  neighbours:
+    neighbour: [{pid,<0.308.0>},{registered_name,'Elixir.Exporter'},{initial_call,{'Elixir.GenStage',init,['Argument__1']}},{current_function,{'Elixir.Task',await,2}},{ancestors,['Elixir.BroadwayTest.Supervisor',<0.237.0>]},{message_queue_len,0},{links,[<0.238.0>,<0.370.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,32},{reductions,2016},{current_stacktrace,[{'Elixir.Task',await,2,[{file,"lib/task.ex"},{line,567}]},{'Elixir.Exporter',export_processed_file,2,[{file,"lib/exporter.ex"},{line,38}]},{'Elixir.GenStage',consumer_dispatch,6,[{file,"lib/gen_stage.ex"},{line,2329}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}]
+2019-05-22 11:45:02 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.BroadwayTest.Supervisor'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.308.0>},{id,'Elixir.Exporter'},{mfargs,{'Elixir.Exporter',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+

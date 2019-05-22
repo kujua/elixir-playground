@@ -107,3 +107,27 @@
 2019-05-22 08:26:31.179 [error] <0.300.0>@Elixir.Exporter:handle_events:14 gen_server 'Elixir.Exporter' terminated with reason: no function clause matching 'Elixir.Exporter':handle_events([#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}], {<0.299.0>,#Ref<0.813555365.2857893894.152012>}, 0) line 14
 2019-05-22 08:26:31.186 [error] <0.300.0>@Elixir.Exporter:handle_events:14 CRASH REPORT Process 'Elixir.Exporter' with 0 neighbours crashed with reason: no function clause matching 'Elixir.Exporter':handle_events([#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}], {<0.299.0>,#Ref<0.813555365.2857893894.152012>}, 0) line 14
 2019-05-22 08:26:31.186 [error] <0.229.0>@Elixir.Exporter:handle_events:14 Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.300.0> exit with reason no function clause matching 'Elixir.Exporter':handle_events([#{customer_id => <<"FE51EF">>,file_name => <<"warthog.jpg">>,image_type => <<"jpg">>,status => ok}], {<0.299.0>,#Ref<0.813555365.2857893894.152012>}, 0) line 14 in context child_terminated
+2019-05-22 11:24:31.160 [error] <0.370.0> ** Task <0.370.0> terminating
+** Started from 'Elixir.Exporter'
+** When function  == #Fun<Elixir.Exporter.0.88056288>
+**      arguments == []
+** Reason for termination == 
+** {function_clause,[{'Elixir.System',cmd,[<<"mv">>,<<"-f assets/FE51EF_warthog-watermark.jpg assets/FE51EF_processed-01.png">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 11:24:31.166 [error] <0.370.0>@Elixir.System:cmd:621 CRASH REPORT Process <0.370.0> with 1 neighbours crashed with reason: no function clause matching 'Elixir.System':cmd(<<"mv">>, <<"-f assets/FE51EF_warthog-watermark.jpg assets/FE51EF_processed-01.png">>, []) line 621
+2019-05-22 11:24:31.166 [error] <0.238.0>@Elixir.System:cmd:621 Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason no function clause matching 'Elixir.System':cmd(<<"mv">>, <<"-f assets/FE51EF_warthog-watermark.jpg assets/FE51EF_processed-01.png">>, []) line 621 in context child_terminated
+2019-05-22 11:43:23.295 [error] <0.370.0> ** Task <0.370.0> terminating
+** Started from 'Elixir.Exporter'
+** When function  == #Fun<Elixir.Exporter.0.44551237>
+**      arguments == []
+** Reason for termination == 
+** {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 11:43:23.301 [error] <0.370.0>@Elixir.System:cmd:621 CRASH REPORT Process <0.370.0> with 1 neighbours crashed with reason: no function clause matching 'Elixir.System':cmd(<<"mkdir">>, <<"FE51EF/">>, []) line 621
+2019-05-22 11:43:23.301 [error] <0.238.0>@Elixir.System:cmd:621 Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason no function clause matching 'Elixir.System':cmd(<<"mkdir">>, <<"FE51EF/">>, []) line 621 in context child_terminated
+2019-05-22 11:45:02.179 [error] <0.370.0> ** Task <0.370.0> terminating
+** Started from 'Elixir.Exporter'
+** When function  == #Fun<Elixir.Exporter.0.111092095>
+**      arguments == []
+** Reason for termination == 
+** {function_clause,[{'Elixir.System',cmd,[<<"mkdir">>,<<"FE51EF/">>,[]],[{file,"lib/system.ex"},{line,621}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-05-22 11:45:02.185 [error] <0.370.0>@Elixir.System:cmd:621 CRASH REPORT Process <0.370.0> with 1 neighbours crashed with reason: no function clause matching 'Elixir.System':cmd(<<"mkdir">>, <<"FE51EF/">>, []) line 621
+2019-05-22 11:45:02.185 [error] <0.238.0>@Elixir.System:cmd:621 Supervisor 'Elixir.BroadwayTest.Supervisor' had child 'Elixir.Exporter' started with 'Elixir.Exporter':start_link([]) at <0.308.0> exit with reason no function clause matching 'Elixir.System':cmd(<<"mkdir">>, <<"FE51EF/">>, []) line 621 in context child_terminated

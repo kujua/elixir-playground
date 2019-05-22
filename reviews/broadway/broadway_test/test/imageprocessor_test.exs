@@ -12,17 +12,18 @@ defmodule ImageprocessorTest do
     Imageresizer.process(%{file_name: "warthog.jpg",
                             customer_id: "FE51EF",
                             image_type: "jpg",
+                            destination_type: "png",
+                            file_name_destination: "processed-01",
+                            path_from: "assets/",
+                            path_to: "assets/",
                             status: :ok})
     Process.sleep(500)
   end
 
   @tag :broadway
   test "broadway pipeline integration test" do
-    ref = Broadway.test_messages(RabbitBroadway, ["S3R556,warthog.jpg,jpg"])
+    ref = Broadway.test_messages(RabbitBroadway, ["S3R556,warthog.jpg,jpg,assets/,assets/,processed-01,png"])
     Process.sleep(500)
-#    assert_receive {:ack, ^ref, [_, _, _] = _successful, failed}
-#    assert_receive {:ack, ^ref, [%{status: :ok}, %{status: :ok}], []}
     IO.inspect(ref, label: "Reference")
-#    assert_receive {:ack, ^ref, successful, failed}
   end
 end

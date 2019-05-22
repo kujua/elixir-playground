@@ -14,8 +14,6 @@ defmodule Imagewatermark do
   def handle_events(events, _from, state) do
     IO.inspect(events, label: "Imagewatermark - event")
 
-    if hd(events).status == :error, do: {:noreply, events, state}
-
     case hd(events).status do
        :ok -> create_watermark(events, state)
        _ -> {:noreply, set_status(events, :error), state}
@@ -24,19 +22,9 @@ defmodule Imagewatermark do
 
   defp create_watermark(events, state) do
     event = hd(events)
-    resizename = event.customer_id
-                  <> "_"
-                  <> String.replace_trailing(event.file_name, "."
-                  <> event.image_type, "")
-                  <> "-resized."
-                  <> event.image_type
-    watermarkname = event.customer_id
-                  <> "_"
-                  <> String.replace_trailing(event.file_name, "."
-                  <> event.image_type, "")
-                  <> "-watermark."
-                  <> event.image_type
-    str_watermark = ["label:BROADWAY EXAMPLE " <> event.customer_id, "assets/" <> resizename, "assets/" <> watermarkname]
+    str_watermark = ["label:BROADWAY EXAMPLE " <> event.customer_id,
+      ImageProcessingModel.create_resize_name(event),
+      ImageProcessingModel.create_watermark_name(event)]
     task = Task.async(fn -> System.cmd("composite", str_watermark) end)
     ret = Task.await(task)
     IO.inspect(ret, label: "Imagewatermark - returned from task")

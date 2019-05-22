@@ -33,7 +33,8 @@ defmodule Transformer do
       image_type: Enum.at(String.split(message, ","), 2),
       path_from: Enum.at(String.split(message, ","), 3),
       path_to: Enum.at(String.split(message, ","), 4),
-      destination_type: Enum.at(String.split(message, ","), 5),
+      file_name_destination: Enum.at(String.split(message, ","), 5),
+      destination_type: Enum.at(String.split(message, ","), 6),
       status: :ok
     }
   end

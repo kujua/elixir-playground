@@ -26,16 +26,9 @@ defmodule Imageresizer do
 
     IO.inspect(event, label: "Imageresizer - call - event data")
 
-    resizename = event.customer_id
-                  <> "_"
-                  <> String.replace_trailing(event.file_name, "."
-                  <> event.image_type, "")
-                  <> "-resized."
-                  <> event.image_type
-
-    IO.inspect(resizename, label: "Imageresizer - call - resizename")
-
-    task = Task.async(fn -> runmagick(event.file_name, resizename)  end)
+    task = Task.async(fn -> runmagick(
+            ImageProcessingModel.create_from_name(event),
+            ImageProcessingModel.create_resize_name(event))  end)
     {_,ret} = Task.await(task)
 
     IO.inspect(ret, label: "Imageresizer - returned from task")
@@ -51,7 +44,7 @@ defmodule Imageresizer do
   end
 
   defp runmagick(from, to) do
-     System.cmd("./assets/resize.sh", ["assets/" <> from, "assets/" <> to])
+     System.cmd("./assets/resize.sh", [from, to])
   end
 
   defp set_status(model, status) do
