@@ -24,6 +24,8 @@ defmodule ImageprocessorTest do
   test "broadway pipeline integration test" do
     ref = Broadway.test_messages(RabbitBroadway, ["S3R556,warthog.jpg,jpg,assets/,assets/,processed-01,png"])
     Process.sleep(1000)
+    assert_receive {:ack, ^ref, [_, _, _] = _successful, failed}
     IO.inspect(ref, label: "Reference")
+
   end
 end

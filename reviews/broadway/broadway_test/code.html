@@ -90,11 +90,7 @@ body .il { color: #B452CD } /* Literal.Number.Integer.Long */
 <body>
 <h2></h2>
 
-<div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">ack</span><span class="p">(</span><span class="n">ack_ref</span><span class="p">,</span> <span class="n">successful</span><span class="p">,</span> <span class="n">failed</span><span class="p">)</span> <span class="k">do</span>
-  <span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span><span class="p">(</span><span class="n">ack_ref</span><span class="p">,</span> <span class="ss">label</span><span class="p">:</span> <span class="s2">&quot;ack - ack_ref&quot;</span><span class="p">)</span>
-  <span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span><span class="p">(</span><span class="n">successful</span><span class="p">,</span> <span class="ss">label</span><span class="p">:</span> <span class="s2">&quot;ack - successful&quot;</span><span class="p">)</span>
-  <span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span><span class="p">(</span><span class="n">failed</span><span class="p">,</span> <span class="ss">label</span><span class="p">:</span> <span class="s2">&quot;ack - failed&quot;</span><span class="p">)</span>
-<span class="k">end</span>
+<div class="highlight"><pre><span></span><span class="nc">Message</span><span class="o">.</span><span class="n">failed</span><span class="p">(</span><span class="n">updatedmessage</span><span class="p">,</span> <span class="s2">&quot;image processing failed&quot;</span><span class="p">)</span>
 </pre></div>
 </body>
 </html>
