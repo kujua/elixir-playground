@@ -19,7 +19,8 @@ defmodule BoundariesExample.Cli.MixProject do
         "coveralls.lcov": :test,
         ctest: :test,
         itest: :test
-      ]
+      ],
+      compilers: [:boundary] ++ Mix.compilers()
     ]
   end
 

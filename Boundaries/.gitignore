@@ -22,3 +22,10 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 boundariesexample-*.tar
 
+.elixir_ls
+
+# Run release.sh to generate this release folder
+/release
+
+# Also ignore temp files created during testing
+**/test/tmp
