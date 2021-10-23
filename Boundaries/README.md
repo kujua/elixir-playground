@@ -1,3 +1,0 @@
-## Boundaries Example
-
-BoundariesExample.Cli
